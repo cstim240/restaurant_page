@@ -1,4 +1,11 @@
-loadHeader();
+
+function loadTest(){
+    const contentDiv = document.querySelector('#content');
+
+    const p = document.createElement('p');
+    p.innerText = 'Hellloooooooooo';
+    contentDiv.appendChild(p);
+}
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
@@ -37,7 +44,11 @@ function loadHeader(){
     header.appendChild(header_content);
     header.appendChild(header_menu);
     header.appendChild(header_order);
+    console.log('headers have been appended!');
 
     contentDiv.appendChild(header);
 }
+loadHeader();
+console.log('load header has been activated!')
 
+loadTest();
