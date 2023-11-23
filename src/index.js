@@ -1,4 +1,4 @@
-
+//problem: these elements created in JS will not show up on the HTML webpage
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
