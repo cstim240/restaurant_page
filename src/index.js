@@ -1,6 +1,6 @@
 loadHeader();
 function loadHeader(){
-    const contentDiv = document.querySelector('.content');
+    const contentDiv = document.querySelector('#content');
 
     const header = document.createElement('div');
     header.classList.add('header');
@@ -40,3 +40,4 @@ function loadHeader(){
 
     contentDiv.appendChild(header);
 }
+
