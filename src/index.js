@@ -19,7 +19,7 @@ function loadHeader(){
     header_content.appendChild(topRtitle);
 
     const header_menu = document.createElement('div');
-    header_content.classList.add('header_menu');    
+    header_menu.classList.add('header_menu');    
     const menus = document.createElement('p');
     menus.innerText = "Menus";
     header_menu.appendChild(menus);
@@ -49,6 +49,7 @@ function loadHeader(){
     contentDiv.appendChild(header);
 }
 loadHeader();
-console.log('load header has been activated!')
+console.log('load header has been activated!');
 
-loadTest();
+loadTest(); 
+console.log('load Test has been activated!');
