@@ -1,11 +1,4 @@
 
-function loadTest(){
-    const contentDiv = document.querySelector('#content');
-
-    const p = document.createElement('p');
-    p.innerText = 'Hellloooooooooo';
-    contentDiv.appendChild(p);
-}
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
@@ -48,8 +41,5 @@ function loadHeader(){
 
     contentDiv.appendChild(header);
 }
-loadHeader();
-console.log('load header has been activated!');
 
-loadTest(); 
-console.log('load Test has been activated!');
+loadHeader();
