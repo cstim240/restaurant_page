@@ -2,6 +2,7 @@
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
+    //header content start
     const header = document.createElement('div');
     header.classList.add('header');
     
@@ -40,6 +41,14 @@ function loadHeader(){
     console.log('headers have been appended!');
 
     contentDiv.appendChild(header);
+    //end of header content
+
+    //main section start
+    
+    //main section end
+
+    //footer start
+    //footer end
 }
 
 loadHeader();
