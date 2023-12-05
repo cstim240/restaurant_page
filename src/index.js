@@ -44,7 +44,37 @@ function loadHeader(){
     //end of header content
 
     //main section start
+    const main_sec = document.createElement('div');
+    main_sec.classList.add('main_sec');
+
+    const appetizers = document.createElement('div');
+    const appetizers_title = document.createElement('p');
+    appetizers_title.innerText = "Appetizers";
     
+    const truffle_fries = document.createElement('div');
+    truffle_fries.classList.add('menu_item');
+    const truffle_name_price = document.createElement('div');
+    const truffle_name = document.createElement('p');
+    const truffle_price = document.createElement('p');
+    truffle_name.innerText = "Truffle Fries";
+    truffle_price.innerText = "$8";
+    const truffle_ingredients = document.createElement('p');
+    truffle_ingredients.innerText = "truffle, herbs, grana padano, garlic aioli";
+
+    appetizers.appendChild(appetizers_title);
+    truffle_name_price.appendChild(truffle_name);
+    truffle_name_price.appendChild(truffle_price);
+    truffle_fries.appendChild(truffle_name_price);
+    truffle_fries.appendChild(truffle_ingredients);
+
+    const chicken_wings = document.createElement('div');
+    chicken_wings.classList.add('menu_item');
+    
+
+    appetizers.appendChild(truffle_fries);
+    main_sec.appendChild(appetizers);
+
+    contentDiv.appendChild(main_sec);
     //main section end
 
     //footer start
