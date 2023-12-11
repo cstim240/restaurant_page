@@ -243,21 +243,8 @@ function loadFooter(){
     orderNowlink.classList.add('footer_header');
     orderNowlink.innerText = 'Order Now';
     const orderNowdiv = document.createElement('div');
-
-    const deliveryfooter = document.createElement('p');
-    deliveryfooter.innerText = 'Delivery';
-    const dealsfooter = document.createElement('p');
-    dealsfooter.innerText = 'Deals';
-    const happyhourfooter = document.createElement('p');
-    happyhourfooter.innerText = 'Happy Hour';
-    const drinksfooter = document.createElement('p');
-    drinksfooter.innerText = 'Drinks';
-
-    orderNowdiv.appendChild(deliveryfooter);
-    orderNowdiv.appendChild(dealsfooter);
-    orderNowdiv.appendChild(happyhourfooter);
-    orderNowdiv.appendChild(drinksfooter);
-
+    createFooterDivContent(orderNowdiv, 'Delivery', 'Deals', 'Happy Hour', 'Drinks');
+    
     firstColInquiry.appendChild(orderNowlink);
     firstColInquiry.appendChild(orderNowdiv);
     //'Order Now' column end
