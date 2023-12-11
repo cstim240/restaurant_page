@@ -42,10 +42,6 @@ function loadHeader(){
 
     contentDiv.appendChild(header);
     //end of header content
-
-
-    //footer start
-    //footer end
 }
 
 //main section start
@@ -77,8 +73,21 @@ function loadMainSec(){
 
     const chicken_wings = document.createElement('div');
     chicken_wings.classList.add('menu_item');
+    const chicken_wings_name_price = document.createElement('div');
+    const chicken_wings_name = document.createElement('p');
+    const chicken_wings_price = document.createElement('p');
+    chicken_wings_name.innerText = "Chicken Wings";
+    chicken_wings_price.innerText = "50c / wing";
+    const chicken_wings_ingredients = document.createElement('p');
+    chicken_wings_ingredients.innerText = "sweet & sour, creamy parmesan dip";
+
+    chicken_wings_name_price.appendChild(chicken_wings_name);
+    chicken_wings_name_price.appendChild(chicken_wings_price);
+    chicken_wings.appendChild(chicken_wings_name_price);
+    chicken_wings.appendChild(chicken_wings_ingredients);
     
     appetizers.appendChild(truffle_fries);
+    appetizers.appendChild(chicken_wings);
     main_sec.appendChild(appetizers);
 
 
