@@ -236,9 +236,9 @@ function loadFooter(){
 
     const resInquiries = document.createElement('div');
     //start of resInquiries content - has three columns, column 3 has two sections
-    const firstColInquiry = document.createElement('div');
 
     //'Order Now' column start
+    const firstColInquiry = document.createElement('div');
     const orderNowlink = document.createElement('p');
     orderNowlink.classList.add('footer_header');
     orderNowlink.innerText = 'Order Now';
@@ -249,7 +249,46 @@ function loadFooter(){
     firstColInquiry.appendChild(orderNowdiv);
     //'Order Now' column end
 
+    //'About' column start
+    const secondColInquiry = document.createElement('div');
+    const aboutLink = document.createElement('p');
+    aboutLink.classList.add('footer_header');
+    aboutLink.innerText = 'About';
+    const aboutDiv = document.createElement('div');
+    createFooterDivContent(aboutDiv, 'Contact Us', 'Opening Hours', 'Locations');
+
+    secondColInquiry.appendChild(aboutLink);
+    secondColInquiry.appendChild(aboutDiv);
+    //'About' column end
+    
+    //third column start: privacy policy and language
+    const thirdColInquiry = document.createElement('div');
+    
+    //privacy section
+    const privacySec = document.createElement('div');
+    const privacypolicylink = document.createElement('p');
+    privacypolicylink.classList.add('footer_header');
+    privacypolicylink.innerText = 'Privacy Policy';
+    const privacyPolicyDiv = document.createElement('div');
+    createFooterDivContent(privacyPolicyDiv, 'Terms and Conditions', 'Cookies and Ads');
+    //privacy section end
+
+    //language section
+    const languageSec = document.createElement('div');
+    const languageLink = document.createElement('p');
+    languageLink.classList.add('footer_header');
+    languageLink.innerText = 'Language';
+    const languageDiv = document.createElement('div');
+    createFooterDivContent(languageDiv, 'Francais');
+    //language section end
+
+    thirdColInquiry.appendChild(privacySec);
+    thirdColInquiry.appendChild(languageSec);
+    //third col end
+
     resInquiries.appendChild(firstColInquiry);
+    resInquiries.appendChild(secondColInquiry);
+    resInquiries.appendChild(thirdColInquiry);
 
     //end of resInquiries content
 
