@@ -199,7 +199,7 @@ function loadMainSec(){
     bellini_name_price.appendChild(bellini_price);
     bellini.appendChild(bellini_name_price);
     bellini.appendChild(bellini_ingredients);
-//bellini end
+    
     const whiskey_sour = document.createElement('div');
     whiskey_sour.classList.add('menu_item');
     const whiskey_sour_name_price = document.createElement('div');
