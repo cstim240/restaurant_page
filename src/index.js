@@ -266,13 +266,13 @@ function loadFooter(){
     
     //privacy section
     const privacySec = document.createElement('div');
-    const privacypolicylink = document.createElement('p');
-    privacypolicylink.classList.add('footer_header');
-    privacypolicylink.innerText = 'Privacy Policy';
+    const privacyPolicyLink = document.createElement('p');
+    privacyPolicyLink.classList.add('footer_header');
+    privacyPolicyLink.innerText = 'Privacy Policy';
     const privacyPolicyDiv = document.createElement('div');
     createFooterDivContent(privacyPolicyDiv, 'Terms and Conditions', 'Cookies and Ads');
     //privacy section end
-    privacySec.appendChild(privacypolicylink);
+    privacySec.appendChild(privacyPolicyLink);
     privacySec.appendChild(privacyPolicyDiv);
 
     //language section
