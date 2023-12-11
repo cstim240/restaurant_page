@@ -131,8 +131,60 @@ function loadMainSec(){
     mains.appendChild(creole_steak);
     //mains end
 
+    //dessert start
+    const desserts = document.createElement('div');
+    const desserts_title = document.createElement('p');
+    desserts_title.innerText = "Mains";
+    desserts.appendChild(desserts_title);
+
+    const ny_cheesecake = document.createElement('div');
+    ny_cheesecake.classList.add('menu_item');
+    const ny_cheesecake_name_price = document.createElement('div');
+    const ny_cheesecake_name = document.createElement('p');
+    const ny_cheesecake_price = document.createElement('p');
+    ny_cheesecake_name.innerText = "New York Cheesecake";
+    ny_cheesecake_price.innerText = "$1.5";
+    const ny_cheesecake_ingredients = document.createElement('p');
+    ny_cheesecake_ingredients.innerText = "cheese, sugar, NY rats";
+
+    ny_cheesecake_name_price.appendChild(ny_cheesecake_name);
+    ny_cheesecake_name_price.appendChild(ny_cheesecake_price);
+    ny_cheesecake.appendChild(ny_cheesecake_name_price);
+    ny_cheesecake.appendChild(ny_cheesecake_ingredients);
+
+    desserts.appendChild(ny_cheesecake);
+    //dessert end
+
+    //salad start
+    const salads = document.createElement('div');
+    const salads_title = document.createElement('p');
+    salads_title.innerText = "Salads";
+    salads.appendChild(salads_title);
+
+    const avo_kale = document.createElement('div');
+    avo_kale.classList.add('menu_item');
+    const avo_kale_name_price = document.createElement('div');
+    const avo_kale_name = document.createElement('p');
+    const avo_kale_price = document.createElement('p');
+    avo_kale_name.innerText = "Avocado Kale Salad";
+    avo_kale_price.innerText = "$20";
+    const avo_kale_ingredients = document.createElement('p');
+    avo_kale_ingredients.innerText = "avocado, kale, grass, dressing";
+
+    avo_kale_name_price.appendChild(avo_kale_name);
+    avo_kale_name_price.appendChild(avo_kale_price);
+    avo_kale.appendChild(avo_kale_name_price);
+    avo_kale.appendChild(avo_kale_ingredients);
+
+    salads.appendChild(avo_kale);
+    //salad end
+
+    //drinks start
+
     main_sec.appendChild(appetizers);
     main_sec.appendChild(mains);
+    main_sec.appendChild(desserts);
+    main_sec.appendChild(salads);
 
     contentDiv.appendChild(main_sec);
 }
