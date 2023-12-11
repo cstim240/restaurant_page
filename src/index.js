@@ -51,9 +51,11 @@ function loadMainSec(){
     const main_sec = document.createElement('div');
     main_sec.classList.add('main_sec');
 
+    //appetizers start
     const appetizers = document.createElement('div');
     const appetizers_title = document.createElement('p');
     appetizers_title.innerText = "Appetizers";
+    appetizers.appendChild(appetizers_title);
     
     const truffle_fries = document.createElement('div');
     truffle_fries.classList.add('menu_item');
@@ -65,7 +67,6 @@ function loadMainSec(){
     const truffle_ingredients = document.createElement('p');
     truffle_ingredients.innerText = "truffle, herbs, grana padano, garlic aioli";
 
-    appetizers.appendChild(appetizers_title);
     truffle_name_price.appendChild(truffle_name);
     truffle_name_price.appendChild(truffle_price);
     truffle_fries.appendChild(truffle_name_price);
@@ -88,8 +89,50 @@ function loadMainSec(){
     
     appetizers.appendChild(truffle_fries);
     appetizers.appendChild(chicken_wings);
-    main_sec.appendChild(appetizers);
+    //appetizers end
 
+    //mains start
+    const mains = document.createElement('div');
+    const mains_title = document.createElement('p');
+    mains.innerText = "Mains";
+    mains.appendChild(mains_title);
+
+    const kp_burger = document.createElement('div');
+    kp_burger.classList.add('menu_item');
+    const kp_burger_name_price = document.createElement('div');
+    const kp_burger_name = document.createElement('p');
+    const kp_burger_price = document.createElement('p');
+    kp_burger_name.innerText = "Krabby Patty Burger";
+    kp_burger_price.innerText = "$10";
+    const kp_burger_ingredients = document.createElement('p');
+    kp_burger_ingredients.innerText = "crab meat, secret ingredient, buns, lettuce";
+
+    kp_burger_name_price.appendChild(kp_burger_name);
+    kp_burger_name_price.appendChild(kp_burger_price);
+    kp_burger.appendChild(kp_burger_name_price);
+    kp_burger.appendChild(kp_burger_ingredients);
+
+    const creole_steak = document.createElement('div');
+    creole_steak.classList.add('menu_item');
+    const creole_steak_name_price = document.createElement('div');
+    const creole_steak_name = document.createElement('p');
+    const creole_steak_price = document.createElement('p');
+    creole_steak_name.innerText = "Krabby Patty Burger";
+    creole_steak_price.innerText = "$10";
+    const creole_steak_ingredients = document.createElement('p');
+    creole_steak_ingredients.innerText = "crab meat, secret ingredient, buns, lettuce";
+
+    creole_steak_name_price.appendChild(creole_steak_name);
+    creole_steak_name_price.appendChild(creole_steak_price);
+    creole_steak.appendChild(creole_steak_name_price);
+    creole_steak.appendChild(creole_steak_ingredients);
+    
+    mains.appendChild(kp_burger);
+    mains.appendChild(creole_steak);
+    //mains end
+
+    main_sec.appendChild(appetizers);
+    main_sec.appendChild(mains);
 
     contentDiv.appendChild(main_sec);
 }
