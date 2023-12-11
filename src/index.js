@@ -1,4 +1,3 @@
-//problem: these elements created in JS will not show up on the HTML webpage
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
@@ -230,5 +229,10 @@ function loadMainSec(){
     contentDiv.appendChild(main_sec_container);
 }
 
+function loadFooter(){
+
+}
+
 loadHeader();
 loadMainSec();
+loadFooter();
