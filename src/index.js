@@ -47,7 +47,8 @@ function loadHeader(){
 //main section start
 function loadMainSec(){
     const contentDiv = document.querySelector('#content');
-    
+
+    const main_sec_container = document.createElement('div');
     const main_sec = document.createElement('div');
     main_sec.classList.add('main_sec');
 
@@ -199,7 +200,7 @@ function loadMainSec(){
     bellini_name_price.appendChild(bellini_price);
     bellini.appendChild(bellini_name_price);
     bellini.appendChild(bellini_ingredients);
-    
+
     const whiskey_sour = document.createElement('div');
     whiskey_sour.classList.add('menu_item');
     const whiskey_sour_name_price = document.createElement('div');
@@ -217,7 +218,6 @@ function loadMainSec(){
 
     drinks.appendChild(bellini);
     drinks.appendChild(whiskey_sour);
-
     //drinks end
 
     main_sec.appendChild(appetizers);
@@ -226,7 +226,8 @@ function loadMainSec(){
     main_sec.appendChild(salads);
     main_sec.appendChild(drinks);
 
-    contentDiv.appendChild(main_sec);
+    main_sec_container.appendChild(main_sec);
+    contentDiv.appendChild(main_sec_container);
 }
 
 loadHeader();
