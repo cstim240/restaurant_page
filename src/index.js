@@ -272,6 +272,8 @@ function loadFooter(){
     const privacyPolicyDiv = document.createElement('div');
     createFooterDivContent(privacyPolicyDiv, 'Terms and Conditions', 'Cookies and Ads');
     //privacy section end
+    privacySec.appendChild(privacypolicylink);
+    privacySec.appendChild(privacyPolicyDiv);
 
     //language section
     const languageSec = document.createElement('div');
@@ -281,6 +283,8 @@ function loadFooter(){
     const languageDiv = document.createElement('div');
     createFooterDivContent(languageDiv, 'Francais');
     //language section end
+    languageSec.appendChild(languageLink);
+    languageSec.appendChild(languageDiv);
 
     thirdColInquiry.appendChild(privacySec);
     thirdColInquiry.appendChild(languageSec);
