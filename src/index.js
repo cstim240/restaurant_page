@@ -43,7 +43,15 @@ function loadHeader(){
     contentDiv.appendChild(header);
     //end of header content
 
-    //main section start
+
+    //footer start
+    //footer end
+}
+
+//main section start
+function loadMainSec(){
+    const contentDiv = document.querySelector('#content');
+    
     const main_sec = document.createElement('div');
     main_sec.classList.add('main_sec');
 
@@ -70,15 +78,12 @@ function loadHeader(){
     const chicken_wings = document.createElement('div');
     chicken_wings.classList.add('menu_item');
     
-
     appetizers.appendChild(truffle_fries);
     main_sec.appendChild(appetizers);
 
-    contentDiv.appendChild(main_sec);
-    //main section end
 
-    //footer start
-    //footer end
+    contentDiv.appendChild(main_sec);
 }
 
 loadHeader();
+loadMainSec();
