@@ -180,11 +180,51 @@ function loadMainSec(){
     //salad end
 
     //drinks start
+    const drinks = document.createElement('div');
+    const drinks_title = document.createElement('p');
+    drinks_title.innerText = "Drinks";
+    drinks.appendChild(drinks_title);
+
+    const bellini = document.createElement('div');
+    bellini.classList.add('menu_item');
+    const bellini_name_price = document.createElement('div');
+    const bellini_name = document.createElement('p');
+    const bellini_price = document.createElement('p');
+    bellini_name.innerText = "Bellini";
+    bellini_price.innerText = "$3";
+    const bellini_ingredients = document.createElement('p');
+    bellini_ingredients.innerText = "bacardi superior, peach schnapps, sparkling wine, peach and sangria";
+    
+    bellini_name_price.appendChild(bellini_name);
+    bellini_name_price.appendChild(bellini_price);
+    bellini.appendChild(bellini_name_price);
+    bellini.appendChild(bellini_ingredients);
+//bellini end
+    const whiskey_sour = document.createElement('div');
+    whiskey_sour.classList.add('menu_item');
+    const whiskey_sour_name_price = document.createElement('div');
+    const whiskey_sour_name = document.createElement('p');
+    const whiskey_sour_price = document.createElement('p');
+    whiskey_sour_name.innerText = "Whiskey Sour";
+    whiskey_sour_price.innerText = "$3";
+    const whiskey_sour_ingredients = document.createElement('p');
+    whiskey_sour_ingredients.innerText = "jack daniel's tennessee whiskey, fresh lemon, lime, angostura bitters";
+
+    whiskey_sour_name_price.appendChild(whiskey_sour_name);
+    whiskey_sour_name_price.appendChild(whiskey_sour_price);
+    whiskey_sour.appendChild(whiskey_sour_name_price);
+    whiskey_sour.appendChild(whiskey_sour_ingredients);
+
+    drinks.appendChild(bellini);
+    drinks.appendChild(whiskey_sour);
+
+    //drinks end
 
     main_sec.appendChild(appetizers);
     main_sec.appendChild(mains);
     main_sec.appendChild(desserts);
     main_sec.appendChild(salads);
+    main_sec.appendChild(drinks);
 
     contentDiv.appendChild(main_sec);
 }
