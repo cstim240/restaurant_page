@@ -243,7 +243,7 @@ function loadFooter(){
     orderNowlink.classList.add('footer_header');
     orderNowlink.innerText = 'Order Now';
     const orderNowdiv = document.createElement('div');
-    
+
     const deliveryfooter = document.createElement('p');
     deliveryfooter.innerText = 'Delivery';
     const dealsfooter = document.createElement('p');
@@ -280,9 +280,12 @@ function loadFooter(){
 loadHeader();
 loadMainSec();
 loadFooter();
-createFooterCol();
 
 //using rest parameters: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
-function createFooterDivContent(div, ...footerlinks){
-
+function createFooterDivContent(div, ...footernames){
+    for (let i = 0; i < footernames.length; i++){
+        const footerEntry = document.createElement('p');
+        footerEntry.innerText = footernames[i];
+        div.appendChild(footerEntry);
+    }
 }
