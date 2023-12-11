@@ -241,7 +241,9 @@ function loadFooter(){
     //'Order Now' column start
     const orderNowlink = document.createElement('p');
     orderNowlink.classList.add('footer_header');
+    orderNowlink.innerText = 'Order Now';
     const orderNowdiv = document.createElement('div');
+    
     const deliveryfooter = document.createElement('p');
     deliveryfooter.innerText = 'Delivery';
     const dealsfooter = document.createElement('p');
@@ -281,6 +283,6 @@ loadFooter();
 createFooterCol();
 
 //using rest parameters: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
-function createFooterCol(mainTitle, ...footerlinks){
+function createFooterDivContent(div, ...footerlinks){
 
 }
