@@ -230,9 +230,57 @@ function loadMainSec(){
 }
 
 function loadFooter(){
+    const contentDiv = document.querySelector('#content');
 
+    const footer = document.createElement('div');
+
+    const resInquiries = document.createElement('div');
+    //start of resInquiries content - has three columns, column 3 has two sections
+    const firstColInquiry = document.createElement('div');
+
+    //'Order Now' column start
+    const orderNowlink = document.createElement('p');
+    orderNowlink.classList.add('footer_header');
+    const orderNowdiv = document.createElement('div');
+    const deliveryfooter = document.createElement('p');
+    deliveryfooter.innerText = 'Delivery';
+    const dealsfooter = document.createElement('p');
+    dealsfooter.innerText = 'Deals';
+    const happyhourfooter = document.createElement('p');
+    happyhourfooter.innerText = 'Happy Hour';
+    const drinksfooter = document.createElement('p');
+    drinksfooter.innerText = 'Drinks';
+
+    orderNowdiv.appendChild(deliveryfooter);
+    orderNowdiv.appendChild(dealsfooter);
+    orderNowdiv.appendChild(happyhourfooter);
+    orderNowdiv.appendChild(drinksfooter);
+
+    firstColInquiry.appendChild(orderNowlink);
+    firstColInquiry.appendChild(orderNowdiv);
+    //'Order Now' column end
+
+    resInquiries.appendChild(firstColInquiry);
+
+    //end of resInquiries content
+
+    const followUs = document.createElement('div');
+
+    const disclaimer = document.createElement('p');
+
+    footer.appendChild(resInquiries);
+    footer.appendChild(followUs);
+    footer.appendChild(disclaimer);
+
+    contentDiv.appendChild(footer);
 }
 
 loadHeader();
 loadMainSec();
 loadFooter();
+createFooterCol();
+
+//using rest parameters: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+function createFooterCol(mainTitle, ...footerlinks){
+
+}
