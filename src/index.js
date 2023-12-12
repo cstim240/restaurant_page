@@ -302,6 +302,7 @@ function loadFooter(){
     createFooterLogo(followUs, '../images/igwhite.png');
     
     const disclaimer = document.createElement('p');
+    disclaimer.innerText = 'We are not liable to any injuries or illnesses sustained from visiting one of our locations.';
 
     footer.appendChild(resInquiries);
     footer.appendChild(followUs);
