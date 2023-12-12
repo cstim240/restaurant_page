@@ -299,7 +299,7 @@ function loadFooter(){
     //'follow us' section start
     const followUs = document.createElement('div');
     createFooterLogo(followUs, '../images/github-mark.png');
-    createFooterLogo(followUs, '../instagram_logo.png');
+    createFooterLogo(followUs, '../images/igwhite.png');
     /*
     const githubLink = document.createElement('a');
     followUs.appendChild(githubLink);
