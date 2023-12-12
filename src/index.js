@@ -1,7 +1,10 @@
+import '../src/style.css';
+
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
 
     //header content start
+    //todo: refactor menu entry (create a function)
     const header = document.createElement('div');
     header.classList.add('header');
     
