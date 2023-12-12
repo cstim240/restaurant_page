@@ -297,6 +297,12 @@ function loadFooter(){
     //end of resInquiries content
 
     const followUs = document.createElement('div');
+    const githubLink = document.createElement('a');
+    followUs.appendChild(githubLink);
+    const githubLogo = document.createElement('img');
+    githubLogo.classList.add('footer_logos');
+    githubLogo.setAttribute('src', '../images/github-mark.png');
+    githubLink.appendChild(githubLogo);
 
     const disclaimer = document.createElement('p');
 
