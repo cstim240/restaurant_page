@@ -298,12 +298,15 @@ function loadFooter(){
 
     //'follow us' section start
     const followUs = document.createElement('div');
+    createFooterLogo(followUs, '../images/github-mark.png');
+    createFooterLogo(followUs, '../instagram_logo.png');
+    /*
     const githubLink = document.createElement('a');
     followUs.appendChild(githubLink);
     const githubLogo = document.createElement('img');
-    createFooterLogo(githubLink, githubLogo, '../images/github-mark.png');
+    
 
-    const igLink = document.createElement('a');
+    const igLink = document.createElement('a');*/
 
     //'follow us' section end
     const disclaimer = document.createElement('p');
@@ -325,11 +328,15 @@ function createFooterDivContent(div, ...footernames){
     }
 }
 
-function createFooterLogo(parentDiv, img_elem, src_url){
+function createFooterLogo(followUsDiv, src_url){
+    const parentDivName = document.createElement('a');
+
+    const img_elem = document.createElement('img');
     img_elem.classList.add('footer_logos');
     img_elem.setAttribute('src', src_url);
-    parentDiv.appendChild(img_elem);
 
+    parentDivName.appendChild(img_elem);
+    followUsDiv.appendChild(parentDivName);
 }
 
 loadHeader();
