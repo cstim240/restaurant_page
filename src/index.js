@@ -300,15 +300,7 @@ function loadFooter(){
     const followUs = document.createElement('div');
     createFooterLogo(followUs, '../images/github-mark.png');
     createFooterLogo(followUs, '../images/igwhite.png');
-    /*
-    const githubLink = document.createElement('a');
-    followUs.appendChild(githubLink);
-    const githubLogo = document.createElement('img');
     
-
-    const igLink = document.createElement('a');*/
-
-    //'follow us' section end
     const disclaimer = document.createElement('p');
 
     footer.appendChild(resInquiries);
