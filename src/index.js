@@ -296,14 +296,16 @@ function loadFooter(){
 
     //end of resInquiries content
 
+    //'follow us' section start
     const followUs = document.createElement('div');
     const githubLink = document.createElement('a');
     followUs.appendChild(githubLink);
     const githubLogo = document.createElement('img');
-    githubLogo.classList.add('footer_logos');
-    githubLogo.setAttribute('src', '../images/github-mark.png');
-    githubLink.appendChild(githubLogo);
+    createFooterLogo(githubLink, githubLogo, '../images/github-mark.png');
 
+    const igLink = document.createElement('a');
+
+    //'follow us' section end
     const disclaimer = document.createElement('p');
 
     footer.appendChild(resInquiries);
@@ -313,11 +315,8 @@ function loadFooter(){
     contentDiv.appendChild(footer);
 }
 
-loadHeader();
-loadMainSec();
-loadFooter();
-
 //using rest parameters: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+//rest parameters are used if you want to have an indefinite amount of arguments, you can also preset the arguments before that ...[indefinite arg array]
 function createFooterDivContent(div, ...footernames){
     for (let i = 0; i < footernames.length; i++){
         const footerEntry = document.createElement('p');
@@ -325,3 +324,14 @@ function createFooterDivContent(div, ...footernames){
         div.appendChild(footerEntry);
     }
 }
+
+function createFooterLogo(parentDiv, img_elem, src_url){
+    img_elem.classList.add('footer_logos');
+    img_elem.setAttribute('src', src_url);
+    parentDiv.appendChild(img_elem);
+
+}
+
+loadHeader();
+loadMainSec();
+loadFooter();
