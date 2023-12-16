@@ -2,7 +2,8 @@
     'use strict';
     loadHeader();
     loadFooter();
-});
+})();
+
 import '../src/style.css';
 
 function loadHeader(){
