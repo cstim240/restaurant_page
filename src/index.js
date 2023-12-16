@@ -336,5 +336,5 @@ function createFooterLogo(followUsDiv, src_url){
 }
 
 loadHeader();
-loadMainSec();
+
 loadFooter();
