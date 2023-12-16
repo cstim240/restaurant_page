@@ -1,10 +1,9 @@
+import '../src/style.css';
 (function() {
     'use strict';
     loadHeader();
     loadFooter();
 })();
-
-import '../src/style.css';
 
 function loadHeader(){
     const contentDiv = document.querySelector('#content');
