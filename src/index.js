@@ -1,3 +1,8 @@
+(function() {
+    'use strict';
+    loadHeader();
+    loadFooter();
+});
 import '../src/style.css';
 
 function loadHeader(){
@@ -335,6 +340,3 @@ function createFooterLogo(followUsDiv, src_url){
     followUsDiv.appendChild(parentDivName);
 }
 
-loadHeader();
-
-loadFooter();
