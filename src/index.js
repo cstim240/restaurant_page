@@ -39,6 +39,12 @@ function loadHeader(){
     const order_btn = document.createElement('button');
     const orderNow = document.createElement('p');
     orderNow.innerText = "ORDER NOW";
+    order_btn.setAttribute("id", "orderButton");
+    order_btn.addEventListener('click', () => {
+        const footer = document.querySelector('.footer');
+        contentDiv.removeChild(footer);
+    });
+
     order_btn.appendChild(orderNow);
     header_order.appendChild(order_btn);
     
@@ -241,6 +247,7 @@ function loadFooter(){
     const contentDiv = document.querySelector('#content');
 
     const footer = document.createElement('div');
+    footer.classList.add('footer');
 
     const resInquiries = document.createElement('div');
     //start of resInquiries content - has three columns, column 3 has two sections
