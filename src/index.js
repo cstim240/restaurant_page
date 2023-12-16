@@ -45,6 +45,9 @@ function loadHeader(){
     order_btn.addEventListener('click', () => {
         const footer = document.querySelector('.footer');
         contentDiv.removeChild(footer);
+        const mainSec = document.querySelector('.main_sec');
+        contentDiv.removeChild(mainSec); 
+        //removes mainSec to avoid multiple mainsections popping after initial click
         loadMainSec();
         loadFooter();
     });
