@@ -101,7 +101,7 @@ table {
 .main_sec_container {
 	border: 1px solid red;
 }
-
+/*TO DO: apply more flexboxes to inner footer elements, style main section*/
 .footer {
 	border: 1px solid blue;
 	display: flex;
