@@ -53,4 +53,21 @@ table {
     height: 50px;
     width: 50px;
 }
-/*to do: time to add more styles*/
+
+#content {
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 auto;
+}
+
+.header {
+	border: 1px solid;
+}
+
+.main_sec_container {
+	border: 1px solid red;
+}
+
+.footer {
+	border: 1px solid blue;
+}
