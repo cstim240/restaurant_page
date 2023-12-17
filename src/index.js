@@ -13,11 +13,9 @@ function loadHeader(){
     const header = document.createElement('div');
     header.classList.add('header');
     
-    const header_content = document.createElement('div');
-    header_content.classList.add('header_content');
     const topRtitle = document.createElement('p');
     topRtitle.innerText = "Tim's Diner";
-    header_content.appendChild(topRtitle);
+    topRtitle.classList.add('timsDiner');
 
     const header_menu = document.createElement('div');
     header_menu.classList.add('header_menu');    
@@ -57,7 +55,7 @@ function loadHeader(){
     order_btn.appendChild(orderNow);
     header_order.appendChild(order_btn);
     
-    header.appendChild(header_content);
+    header.appendChild(topRtitle);
     header.appendChild(header_menu);
     header.appendChild(header_order);
     console.log('headers have been appended!');

@@ -72,7 +72,15 @@ table {
 	display: flex;
 	justify-content: space-evenly;
 	gap: 1vw;
-	
+}
+
+.timsDiner {
+	font-size: 3em;
+	color: black;
+	/* contributes to the outline effect by determining the color inside the outline*/
+	-webkit-text-stroke-width: 1px; 
+	-webkit-text-fill-color: #FFECC7;
+	text-shadow: -3px -2px 5px #FFECC7; /*x y blur-radius color*/
 }
 
 .main_sec_container {
