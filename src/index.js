@@ -48,7 +48,7 @@ function loadHeader(){
         if (footer){
             contentDiv.removeChild(footer);
         }
-        const mainSec = document.querySelector('.main_sec');
+        const mainSec = document.querySelector('.main_sec_container');
         if (mainSec){
             contentDiv.removeChild(mainSec); 
         }
@@ -74,6 +74,7 @@ function loadMainSec(){
     const contentDiv = document.querySelector('#content');
 
     const main_sec_container = document.createElement('div');
+    main_sec_container.classList.add('main_sec_container');
     const main_sec = document.createElement('div');
     main_sec.classList.add('main_sec');
 
