@@ -57,8 +57,9 @@ table {
 #content {
 	display: grid;
 	grid-template-rows: auto;
-	height: 97vh;
+	height: 100vh;
 	font-family: sans-serif;
+	background-color: #393838;
 }
 
 .header {
@@ -103,4 +104,6 @@ table {
 
 .footer {
 	border: 1px solid blue;
+	display: flex;
+	flex-direction: column;
 }
