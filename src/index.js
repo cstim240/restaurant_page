@@ -40,9 +40,6 @@ function loadHeader(){
     const orderNow = document.createElement('p');
     orderNow.innerText = "ORDER NOW";
     order_btn.setAttribute("id", "orderButton");
-    //adds functionality to order button when clicked: removes existing footer 
-    //to make room for main section and adds it back in
-    //TO DO: Currently, a bug removes the footer after consecutive clicks on the 'ORDER NOW' btn
     order_btn.addEventListener('click', () => {
         const footer = document.querySelector('.footer');
         if (footer){
