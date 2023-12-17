@@ -65,6 +65,8 @@ table {
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	padding: 0.5em;
+	background-color: #393838;
 }
 
 .timsDiner {
@@ -77,7 +79,7 @@ table {
 }
 
 .header_menu {
-	font-size: 1.25em;
+	font-size: 1.15em;
 	color: #FFECC7;
 	display: flex;
 	justify-content: space-evenly;
@@ -88,9 +90,10 @@ table {
 	font-size: 2em;
 	color: white;
 	background: none;
-	border-radius: 3px;
+	border-radius: 1px;
 	border-width: 2px;
 	border-color: #FFECC7;
+	padding: 10px;
 }
 
 .main_sec_container {
