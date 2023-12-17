@@ -67,13 +67,6 @@ table {
 	align-items: center;
 }
 
-.header_menu {
-	border: 1px solid green;
-	display: flex;
-	justify-content: space-evenly;
-	gap: 1vw;
-}
-
 .timsDiner {
 	font-size: 3em;
 	color: black;
@@ -81,6 +74,14 @@ table {
 	-webkit-text-stroke-width: 1px; 
 	-webkit-text-fill-color: #FFECC7;
 	text-shadow: -3px -2px 5px #FFECC7; /*x y blur-radius color*/
+}
+
+.header_menu {
+	font-size: 1.25em;
+	color: #FFECC7;
+	display: flex;
+	justify-content: space-evenly;
+	gap: 1vw;
 }
 
 .main_sec_container {
