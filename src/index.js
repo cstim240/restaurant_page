@@ -28,7 +28,7 @@ function loadHeader(){
     locations.innerText = "Locations";
     header_menu.appendChild(locations);
     const giftcards = document.createElement('p');
-    giftcards.innerText = "Gift Cards";
+    giftcards.innerText = "Gift-Cards";
     header_menu.appendChild(giftcards);
     const careers = document.createElement('p');
     careers.innerText = "Careers";

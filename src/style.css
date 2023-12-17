@@ -67,8 +67,11 @@ table {
 }
 
 .header_menu {
+	border: 1px solid green;
 	display: flex;
 	justify-content: space-evenly;
+	gap: 1vw;
+	
 }
 
 .main_sec_container {
