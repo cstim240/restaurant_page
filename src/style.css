@@ -87,6 +87,10 @@ table {
 .buttonText {
 	font-size: 2em;
 	color: white;
+	background: none;
+	border-radius: 3px;
+	border-width: 2px;
+	border-color: #FFECC7;
 }
 
 .main_sec_container {
