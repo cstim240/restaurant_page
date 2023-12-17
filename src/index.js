@@ -42,11 +42,16 @@ function loadHeader(){
     order_btn.setAttribute("id", "orderButton");
     //adds functionality to order button when clicked: removes existing footer 
     //to make room for main section and adds it back in
+    //TO DO: Currently, a bug removes the footer after consecutive clicks on the 'ORDER NOW' btn
     order_btn.addEventListener('click', () => {
         const footer = document.querySelector('.footer');
-        contentDiv.removeChild(footer);
+        if (footer){
+            contentDiv.removeChild(footer);
+        }
         const mainSec = document.querySelector('.main_sec');
-        contentDiv.removeChild(mainSec); 
+        if (mainSec){
+            contentDiv.removeChild(mainSec); 
+        }
         //removes mainSec to avoid multiple mainsections popping after initial click
         loadMainSec();
         loadFooter();
