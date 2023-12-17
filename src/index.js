@@ -32,11 +32,9 @@ function loadHeader(){
     careers.innerText = "Careers";
     header_menu.appendChild(careers);
 
-    const header_order = document.createElement('div');
-    header_order.classList.add('header_order');
     const order_btn = document.createElement('button');
-    const orderNow = document.createElement('p');
-    orderNow.innerText = "ORDER NOW";
+    order_btn.innerText = "ORDER NOW";
+    order_btn.classList.add('buttonText');
     order_btn.setAttribute("id", "orderButton");
     order_btn.addEventListener('click', () => {
         const footer = document.querySelector('.footer');
@@ -51,13 +49,10 @@ function loadHeader(){
         loadMainSec();
         loadFooter();
     });
-
-    order_btn.appendChild(orderNow);
-    header_order.appendChild(order_btn);
     
     header.appendChild(topRtitle);
     header.appendChild(header_menu);
-    header.appendChild(header_order);
+    header.appendChild(order_btn);
     console.log('headers have been appended!');
 
     contentDiv.appendChild(header);
