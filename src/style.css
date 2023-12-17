@@ -63,6 +63,12 @@ table {
 .header {
 	border: 1px solid;
 	display: flex;
+	justify-content: space-evenly;
+}
+
+.header_menu {
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .main_sec_container {
