@@ -56,11 +56,13 @@ table {
 
 #content {
 	display: grid;
-	grid-template-rows: auto ;
+	grid-template-rows: auto;
+	height: 97vh;
 }
 
 .header {
 	border: 1px solid;
+	display: flex;
 }
 
 .main_sec_container {
