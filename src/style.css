@@ -84,7 +84,7 @@ table {
 	color: #FFECC7;
 	display: flex;
 	justify-content: space-evenly;
-	gap: 1vw;
+	gap: 1.5vw;
 }
 
 .buttonText {
