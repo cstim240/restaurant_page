@@ -105,7 +105,7 @@ table {
 	/*the contain val specifies that regardless of the size of the containing box, the 
 	background image shoul dbe scaled so that each size is large as possible
 	while not exceeding the length of the corresponding side of container*/
-	
+
 }
 
 .footer {
@@ -113,7 +113,7 @@ table {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	color: #FFFFFF;
+	color: #FFECC7;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
