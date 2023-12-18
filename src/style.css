@@ -172,6 +172,7 @@ table {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
 	column-gap: 50px;
+	margin-left: 80px;
 }
 
 .colInquiry {
