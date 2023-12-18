@@ -64,7 +64,7 @@ table {
 }
 
 .header {
-	border: 1px solid;
+	border-bottom: 1px solid #920E0E;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
@@ -100,7 +100,7 @@ table {
 }
 
 .main_sec_container {
-	border: 1px solid red;
+	border: 1px solid #920E0E;
 	background: url(../images/food_background.jpg);
 	background-size: contain; 
 	/*the contain val specifies that regardless of the size of the containing box, the 
@@ -142,6 +142,7 @@ table {
 
 
 .footer {
+	border-top: 1px solid #920E0E;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
