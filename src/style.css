@@ -119,6 +119,7 @@ table {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	gap: 10px;
 }
 
 .food_entry {
@@ -126,6 +127,7 @@ table {
 	font-size: 12px;
 	display: flex;
 	flex-direction: column;
+	gap: 10px;
 }
 
 .food_title {
