@@ -253,6 +253,7 @@ function loadFooter(){
     footer.classList.add('footer');
 
     const resInquiries = document.createElement('div');
+    resInquiries.classList.add('resInquiries');
     //start of resInquiries content - has three columns, column 3 has two sections
 
     //'Order Now' column start

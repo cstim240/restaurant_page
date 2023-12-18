@@ -108,4 +108,11 @@ table {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
+	color: #FFFFFF;
+}
+
+.resInquiries {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 33%;
 }
