@@ -123,7 +123,15 @@ table {
 
 .food_entry {
 	width: 250px;
+	font-size: 12px;
 }
+
+.food_title {
+	font-size: 24px;
+	color: #920E0E;
+}
+
+
 
 .footer {
 	display: flex;

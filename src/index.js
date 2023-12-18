@@ -72,6 +72,7 @@ function loadMainSec(){
     const appetizers = document.createElement('div');
     appetizers.classList.add('food_entry');
     const appetizers_title = document.createElement('p');
+    appetizers_title.classList.add('food_title');
     appetizers_title.innerText = "Appetizers";
     appetizers.appendChild(appetizers_title);
     
@@ -113,7 +114,8 @@ function loadMainSec(){
     const mains = document.createElement('div');
     mains.classList.add('food_entry');
     const mains_title = document.createElement('p');
-    mains.innerText = "Mains";
+    mains_title.innerText = "Mains";
+    mains_title.classList.add('food_title');
     mains.appendChild(mains_title);
 
     const kp_burger = document.createElement('div');
@@ -154,7 +156,8 @@ function loadMainSec(){
     const desserts = document.createElement('div');
     desserts.classList.add('food_entry');
     const desserts_title = document.createElement('p');
-    desserts_title.innerText = "Mains";
+    desserts_title.classList.add('food_title');
+    desserts_title.innerText = "Desserts";
     desserts.appendChild(desserts_title);
 
     const ny_cheesecake = document.createElement('div');
@@ -179,6 +182,7 @@ function loadMainSec(){
     const salads = document.createElement('div');
     salads.classList.add('food_entry');
     const salads_title = document.createElement('p');
+    salads_title.classList.add('food_title');
     salads_title.innerText = "Salads";
     salads.appendChild(salads_title);
 
@@ -204,6 +208,7 @@ function loadMainSec(){
     const drinks = document.createElement('div');
     drinks.classList.add('food_entry');
     const drinks_title = document.createElement('p');
+    drinks_title.classList.add('food_title');
     drinks_title.innerText = "Drinks";
     drinks.appendChild(drinks_title);
 
