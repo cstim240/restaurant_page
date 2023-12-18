@@ -107,11 +107,16 @@ table {
 	while not exceeding the length of the corresponding side of container*/
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
 
 .main_sec {
+	height: 80%;
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
 }
 
 .footer {
