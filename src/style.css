@@ -133,7 +133,9 @@ table {
 }
 
 .name_price {
-	font-size: 16px;
+	font-size: 14px;
+	display: flex;
+	justify-content: space-between;
 }
 
 
