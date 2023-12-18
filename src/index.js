@@ -322,8 +322,14 @@ function loadFooter(){
 
     //'follow us' section start
     const followUs = document.createElement('div');
-    createFooterLogo(followUs, '../images/github-mark.png');
-    createFooterLogo(followUs, '../images/igwhite.png');
+    const followUsClaim = document.createElement('p');
+    followUsClaim.innerText = 'Follow Us';
+    followUs.appendChild(followUsClaim);
+
+    const logoDiv = document.createElement('div');
+    createFooterLogo(logoDiv, '../images/github-mark.png');
+    createFooterLogo(logoDiv, '../images/igwhite.png');
+    followUs.appendChild(logoDiv);
     
     const disclaimer = document.createElement('p');
     disclaimer.innerText = 'We are not liable to any injuries or illnesses sustained from visiting one of our locations.';
