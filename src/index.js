@@ -284,6 +284,7 @@ function loadFooter(){
     
     //third column start: privacy policy and language
     const thirdColInquiry = document.createElement('div');
+    thirdColInquiry.classList.add('thirdColInquiry');
     
     //privacy section
     const privacySec = document.createElement('div');

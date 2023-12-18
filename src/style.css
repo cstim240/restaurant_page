@@ -118,7 +118,7 @@ table {
 }
 
 .colInquiry {
-	width: 100px;
+	width: 150px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -126,5 +126,11 @@ table {
 
 .footer_header {
 	font-size: 20px;
+}
+
+.thirdColInquiry {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
