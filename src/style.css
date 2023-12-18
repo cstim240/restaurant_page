@@ -113,7 +113,7 @@ table {
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	color: #FFECC7;
+	color: #FFFFFF;
 	padding-top: 15px;
 	padding-bottom: 10px;
 }
@@ -125,7 +125,7 @@ table {
 }
 
 .colInquiry {
-	width: 150px;
+	width: 175px;
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -133,6 +133,7 @@ table {
 
 .footer_header {
 	font-size: 20px;
+	color: #FFECC7;
 }
 
 .thirdColInquiry {
