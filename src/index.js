@@ -258,6 +258,7 @@ function loadFooter(){
 
     //'Order Now' column start
     const firstColInquiry = document.createElement('div');
+    firstColInquiry.classList.add('colInquiry');
     const orderNowlink = document.createElement('p');
     orderNowlink.classList.add('footer_header');
     orderNowlink.innerText = 'Order Now';

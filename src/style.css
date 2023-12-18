@@ -114,5 +114,13 @@ table {
 .resInquiries {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 33%;
+	column-gap: 50px;
+}
+
+.colInquiry {
+	width: 100px;
+}
+
+.footer_header {
+	font-size: 20px;
 }
