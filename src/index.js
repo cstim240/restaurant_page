@@ -322,11 +322,14 @@ function loadFooter(){
 
     //'follow us' section start
     const followUs = document.createElement('div');
+    followUs.classList.add('followUs');
     const followUsClaim = document.createElement('p');
     followUsClaim.innerText = 'Follow Us';
+    followUs.classList.add('footer_header');
     followUs.appendChild(followUsClaim);
 
     const logoDiv = document.createElement('div');
+    logoDiv.classList.add('logoDiv');
     createFooterLogo(logoDiv, '../images/github-mark.png');
     createFooterLogo(logoDiv, '../images/igwhite.png');
     followUs.appendChild(logoDiv);
