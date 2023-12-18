@@ -79,6 +79,7 @@ function loadMainSec(){
     const truffle_fries = document.createElement('div');
     truffle_fries.classList.add('menu_item');
     const truffle_name_price = document.createElement('div');
+    truffle_name_price.classList.add('name_price');
     const truffle_name = document.createElement('p');
     const truffle_price = document.createElement('p');
     truffle_name.innerText = "Truffle Fries";
@@ -94,6 +95,7 @@ function loadMainSec(){
     const chicken_wings = document.createElement('div');
     chicken_wings.classList.add('menu_item');
     const chicken_wings_name_price = document.createElement('div');
+    chicken_wings_name_price.classList.add('name_price');
     const chicken_wings_name = document.createElement('p');
     const chicken_wings_price = document.createElement('p');
     chicken_wings_name.innerText = "Chicken Wings";
@@ -121,6 +123,7 @@ function loadMainSec(){
     const kp_burger = document.createElement('div');
     kp_burger.classList.add('menu_item');
     const kp_burger_name_price = document.createElement('div');
+    kp_burger_name_price.classList.add('name_price');
     const kp_burger_name = document.createElement('p');
     const kp_burger_price = document.createElement('p');
     kp_burger_name.innerText = "Krabby Patty Burger";
@@ -136,6 +139,7 @@ function loadMainSec(){
     const creole_steak = document.createElement('div');
     creole_steak.classList.add('menu_item');
     const creole_steak_name_price = document.createElement('div');
+    creole_steak_name_price.classList.add('name_price');
     const creole_steak_name = document.createElement('p');
     const creole_steak_price = document.createElement('p');
     creole_steak_name.innerText = "Krabby Patty Burger";
@@ -163,6 +167,7 @@ function loadMainSec(){
     const ny_cheesecake = document.createElement('div');
     ny_cheesecake.classList.add('menu_item');
     const ny_cheesecake_name_price = document.createElement('div');
+    ny_cheesecake_name_price.classList.add('name_price');
     const ny_cheesecake_name = document.createElement('p');
     const ny_cheesecake_price = document.createElement('p');
     ny_cheesecake_name.innerText = "New York Cheesecake";
@@ -189,6 +194,7 @@ function loadMainSec(){
     const avo_kale = document.createElement('div');
     avo_kale.classList.add('menu_item');
     const avo_kale_name_price = document.createElement('div');
+    avo_kale_name_price.classList.add('name_price');
     const avo_kale_name = document.createElement('p');
     const avo_kale_price = document.createElement('p');
     avo_kale_name.innerText = "Avocado Kale Salad";
@@ -215,6 +221,7 @@ function loadMainSec(){
     const bellini = document.createElement('div');
     bellini.classList.add('menu_item');
     const bellini_name_price = document.createElement('div');
+    bellini_name_price.classList.add('name_price');
     const bellini_name = document.createElement('p');
     const bellini_price = document.createElement('p');
     bellini_name.innerText = "Bellini";
@@ -230,6 +237,7 @@ function loadMainSec(){
     const whiskey_sour = document.createElement('div');
     whiskey_sour.classList.add('menu_item');
     const whiskey_sour_name_price = document.createElement('div');
+    whiskey_sour_name_price.classList.add('name_price');
     const whiskey_sour_name = document.createElement('p');
     const whiskey_sour_price = document.createElement('p');
     whiskey_sour_name.innerText = "Whiskey Sour";
