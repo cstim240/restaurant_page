@@ -109,7 +109,10 @@ table {
 	justify-content: center;
 }
 
-
+.main_sec {
+	border: 20px solid #FFECC7;
+	background-color: #FFDD9B;
+}
 
 .footer {
 	display: flex;
