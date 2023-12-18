@@ -116,7 +116,6 @@ table {
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
 	display: flex;
-
 	flex-direction: column;
 	flex-wrap: wrap;
 }
@@ -124,12 +123,16 @@ table {
 .food_entry {
 	width: 250px;
 	font-size: 12px;
+	display: flex;
+	flex-direction: column;
 }
 
 .food_title {
 	font-size: 24px;
 	color: #920E0E;
 }
+
+
 
 
 
