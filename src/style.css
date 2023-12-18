@@ -119,8 +119,12 @@ table {
 
 .colInquiry {
 	width: 100px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
 }
 
 .footer_header {
 	font-size: 20px;
 }
+

@@ -271,6 +271,7 @@ function loadFooter(){
 
     //'About' column start
     const secondColInquiry = document.createElement('div');
+    secondColInquiry.classList.add('colInquiry');
     const aboutLink = document.createElement('p');
     aboutLink.classList.add('footer_header');
     aboutLink.innerText = 'About';
@@ -286,6 +287,7 @@ function loadFooter(){
     
     //privacy section
     const privacySec = document.createElement('div');
+    privacySec.classList.add('colInquiry');
     const privacyPolicyLink = document.createElement('p');
     privacyPolicyLink.classList.add('footer_header');
     privacyPolicyLink.innerText = 'Privacy Policy';
@@ -297,6 +299,7 @@ function loadFooter(){
 
     //language section
     const languageSec = document.createElement('div');
+    languageSec.classList.add('colInquiry');
     const languageLink = document.createElement('p');
     languageLink.classList.add('footer_header');
     languageLink.innerText = 'Language';
