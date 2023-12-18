@@ -105,8 +105,11 @@ table {
 	/*the contain val specifies that regardless of the size of the containing box, the 
 	background image shoul dbe scaled so that each size is large as possible
 	while not exceeding the length of the corresponding side of container*/
-
+	display: flex;
+	justify-content: center;
 }
+
+
 
 .footer {
 	display: flex;
