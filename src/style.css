@@ -116,14 +116,25 @@ table {
 	width: 520px;
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	gap: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+}
+
+#appetizerDiv {
+	grid-row-start: 1;
+}
+
+#mainsDiv {
+	grid-row-start: 2;
+}
+
+#dessertsDiv {
+	grid-row-start: 3;
 }
 
 .food_entry {
-	width: 250px;
+	width: 180px;
 	font-size: 12px;
 	display: flex;
 	flex-direction: column;

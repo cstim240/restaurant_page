@@ -71,6 +71,7 @@ function loadMainSec(){
     //appetizers start
     const appetizers = document.createElement('div');
     appetizers.classList.add('food_entry');
+    appetizers.setAttribute('id', 'appetizerDiv');
     const appetizers_title = document.createElement('p');
     appetizers_title.classList.add('food_title');
     appetizers_title.innerText = "Appetizers";
@@ -115,6 +116,7 @@ function loadMainSec(){
     //mains start
     const mains = document.createElement('div');
     mains.classList.add('food_entry');
+    mains.setAttribute('id', 'mainsDiv');
     const mains_title = document.createElement('p');
     mains_title.innerText = "Mains";
     mains_title.classList.add('food_title');
@@ -159,6 +161,7 @@ function loadMainSec(){
     //dessert start
     const desserts = document.createElement('div');
     desserts.classList.add('food_entry');
+    desserts.setAttribute('id', 'dessertsDiv');
     const desserts_title = document.createElement('p');
     desserts_title.classList.add('food_title');
     desserts_title.innerText = "Desserts";
