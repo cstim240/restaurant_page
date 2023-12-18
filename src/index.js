@@ -70,6 +70,7 @@ function loadMainSec(){
 
     //appetizers start
     const appetizers = document.createElement('div');
+    appetizers.classList.add('food_entry');
     const appetizers_title = document.createElement('p');
     appetizers_title.innerText = "Appetizers";
     appetizers.appendChild(appetizers_title);
@@ -110,6 +111,7 @@ function loadMainSec(){
 
     //mains start
     const mains = document.createElement('div');
+    mains.classList.add('food_entry');
     const mains_title = document.createElement('p');
     mains.innerText = "Mains";
     mains.appendChild(mains_title);
@@ -150,6 +152,7 @@ function loadMainSec(){
 
     //dessert start
     const desserts = document.createElement('div');
+    desserts.classList.add('food_entry');
     const desserts_title = document.createElement('p');
     desserts_title.innerText = "Mains";
     desserts.appendChild(desserts_title);
@@ -174,6 +177,7 @@ function loadMainSec(){
 
     //salad start
     const salads = document.createElement('div');
+    salads.classList.add('food_entry');
     const salads_title = document.createElement('p');
     salads_title.innerText = "Salads";
     salads.appendChild(salads_title);
@@ -198,6 +202,7 @@ function loadMainSec(){
 
     //drinks start
     const drinks = document.createElement('div');
+    drinks.classList.add('food_entry');
     const drinks_title = document.createElement('p');
     drinks_title.innerText = "Drinks";
     drinks.appendChild(drinks_title);
