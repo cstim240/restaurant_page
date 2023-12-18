@@ -112,11 +112,17 @@ table {
 
 .main_sec {
 	height: 80%;
+	width: 520px;
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
 	display: flex;
+
 	flex-direction: column;
 	flex-wrap: wrap;
+}
+
+.food_entry {
+	width: 250px;
 }
 
 .footer {
