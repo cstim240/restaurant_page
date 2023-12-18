@@ -100,6 +100,7 @@ table {
 
 .main_sec_container {
 	border: 1px solid red;
+	background: url(../images/food_background.jpg);
 }
 
 .footer {
@@ -108,6 +109,8 @@ table {
 	justify-content: space-around;
 	align-items: center;
 	color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 10px;
 }
 
 .resInquiries {
