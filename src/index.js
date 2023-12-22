@@ -421,6 +421,7 @@ function loadLocations(){
     locationsInnerDiv.appendChild(locationTitle);
 
     const locationEntries = document.createElement('div');
+    locationEntries.classList.add('locationEntries');
     //enter createLocationEntries here
     createLocationEntries(locationEntries, "Surrey", "10am - 9pm");
     createLocationEntries(locationEntries, "Burnaby", "9am - 5pm");

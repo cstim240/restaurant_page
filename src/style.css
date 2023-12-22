@@ -166,11 +166,24 @@ table {
 	color: #920E0E;
 }
 
+.location_title {
+	font-size: 28px;
+	font-weight: 700;
+}
+
 .name_price, .addressTimePair {
 	font-size: 14px;
 	display: flex;
 	justify-content: space-between;
 }
+
+.addressTimePair {
+	gap: 150px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
 
 .footer {
 	border-top: 1px solid #920E0E;
