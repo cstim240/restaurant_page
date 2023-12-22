@@ -442,7 +442,12 @@ function loadLocations(){
 }
 
 function loadGiftCards(){
+    const contentDiv = document.querySelector('#content');
+    const giftcardsDiv = document.createElement('div');
+    giftcardsDiv.classList.add('giftCards_Sec');
+    contentDiv.appendChild(giftcardsDiv);
 
+    loadFooter();
 }
 
 function createLocationEntries(div, location, openingHours){
@@ -492,6 +497,7 @@ function removeAllSections(btn){
 
     const mainSec = document.querySelector('.main_sec_container');
     const locationsSec = document.querySelector('.location_Sec');
+    const giftCards_Sec = document.querySelector('.giftCards_Sec');
     if (footer){
         contentDiv.removeChild(footer);
     }
@@ -500,7 +506,9 @@ function removeAllSections(btn){
         contentDiv.removeChild(mainSec); 
     } else if(locationsSec) {
         contentDiv.removeChild(locationsSec);
-    } 
+    } else if(giftCards_Sec){
+        contentDiv.removeChild(giftCards_Sec);
+    }
     clickedStatus(btn);
 }
 
