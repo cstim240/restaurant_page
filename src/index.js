@@ -417,8 +417,18 @@ function loadLocations(){
     const locationTitle = document.createElement('p');
     locationTitle.innerText = "Locations";
     locationsInnerDiv.appendChild(locationTitle);
+    const locationEntries = document.createElement('div');
+    locationEntries.classList('locationEntries');
+    //enter createLocationEntries here
+    locationsInnerDiv.appendChild(locationEntries);
 
     locationsDiv.appendChild(locationsInnerDiv);
     
     contentDiv.appendChild(locationsDiv);
+}
+
+function createLocationEntries(location, openingHours){
+    const locationEntries = document.querySelector('.locationEntries');
+    const addressTimePair = document.createElement('div');
+    //create p's then attach to locationEntries div!
 }
