@@ -129,7 +129,7 @@ table {
 	column-gap: 20px;
 }
 
-.locationsInnerDiv {
+.locationsInnerDiv, .happyHourDiv {
 	display:flex;
 	flex-direction: column;
 	align-items: center;
@@ -164,7 +164,7 @@ table {
 	color: #920E0E;
 }
 
-.location_title {
+.location_title, .happyHour_title {
 	font-size: 28px;
 	font-weight: 700;
 }
@@ -181,7 +181,7 @@ table {
 	font-weight: 500;
 }
 
-.locationEntries {
+.locationEntries, .happyHourEntries {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
