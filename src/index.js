@@ -28,6 +28,7 @@ function loadHeader(){
     const locations = document.createElement('button');
     locations.innerText = "Locations";
     locations.classList.add('header_menu_button');
+    locations.classList.add('location_button');
     locations.addEventListener('click', () => {
         removeAllSections(locations);
         loadLocations();
@@ -446,11 +447,15 @@ function createLocationEntries(div, location, openingHours){
 
 //function to apply click class and remove click class from other buttons
 function clickedStatus(btn){
-    const locations = document.querySelector('.header_menu_button');
-    locations.classList.remove('clicked');
+    const locations = document.querySelector('.location_button');
+    if (locations){
+        locations.classList.remove('clicked');
+    }
 
     const order_btn = document.querySelector('.buttonText');
-    order_btn.classList.remove('clicked');
+    if (order_btn){
+        order_btn.classList.remove('clicked');
+    }
 
     btn.classList.add('clicked');
 }
