@@ -474,4 +474,9 @@ function clickedStatus(btn){
     order_btn.classList.remove('clicked');
 
     btn.classList.add('clicked');
-}; 
+}
+
+function removeAllSections(){
+
+}
+
