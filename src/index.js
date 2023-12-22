@@ -436,6 +436,7 @@ function loadLocations(){
 
 function createLocationEntries(div, location, openingHours){
     const addressTimePair = document.createElement('div');
+    addressTimePair.classList.add('addressTimePair');
     
     //create p's then attach to locationEntries div!
 
