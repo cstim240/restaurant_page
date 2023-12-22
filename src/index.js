@@ -434,6 +434,7 @@ function loadLocations(){
     const happyHourDiv = document.createElement('div');
     const happyHourTitle = document.createElement('p');
     happyHourTitle.innerText = "Happy Hour";
+    happyHourTitle.classList.add('happyHour_title');
     happyHourDiv.appendChild(happyHourTitle);
 
     const happyHourEntries = document.createElement('div');

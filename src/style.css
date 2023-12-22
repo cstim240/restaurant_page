@@ -159,7 +159,7 @@ table {
 	gap: 10px;
 }
 
-.food_title, .location_title {
+.food_title, .location_title, .happyHour_title {
 	font-size: 24px;
 	color: #920E0E;
 }
