@@ -90,6 +90,12 @@ table {
 	gap: 1.5vw;
 }
 
+.header_menu_button {
+	color: #FFECC7;
+	background-color: #393838;
+	font-size: 1.15em;
+}
+
 .buttonText {
 	font-size: 2em;
 	color: white;
