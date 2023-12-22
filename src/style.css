@@ -94,7 +94,18 @@ table {
 	color: #FFECC7;
 	background-color: #393838;
 	font-size: 1.15em;
+	border: none;
 }
+
+#orderButton:hover, .header_menu_button:hover {
+	background-color: #717070;
+}
+
+#orderButton:active, .header_menu_button:active {
+	color: #920E0E;
+}
+
+
 
 .buttonText {
 	font-size: 2em;
@@ -186,8 +197,6 @@ table {
 	flex-direction: column;
 	gap: 15px;
 }
-
-
 
 .footer {
 	border-top: 1px solid #920E0E;
