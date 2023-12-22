@@ -417,9 +417,14 @@ function loadLocations(){
     const locationTitle = document.createElement('p');
     locationTitle.innerText = "Locations";
     locationsInnerDiv.appendChild(locationTitle);
+
     const locationEntries = document.createElement('div');
-    locationEntries.classList('locationEntries');
     //enter createLocationEntries here
+    createLocationEntries(locationEntries, "Surrey", "10am - 9pm");
+    createLocationEntries(locationEntries, "Burnaby", "9am - 5pm");
+    createLocationEntries(locationEntries, "Richmond", "8am - 8pm");
+    createLocationEntries(locationEntries, "Vancouver", "9am - 6pm");
+
     locationsInnerDiv.appendChild(locationEntries);
 
     locationsDiv.appendChild(locationsInnerDiv);
@@ -427,8 +432,17 @@ function loadLocations(){
     contentDiv.appendChild(locationsDiv);
 }
 
-function createLocationEntries(location, openingHours){
-    const locationEntries = document.querySelector('.locationEntries');
+function createLocationEntries(div, location, openingHours){
     const addressTimePair = document.createElement('div');
+    
     //create p's then attach to locationEntries div!
+
+    const address = document.createElement('p');
+    address.innerText = location;
+    addressTimePair.appendChild(address);
+    const time = document.createElement('p');
+    time.innerText = openingHours;
+    addressTimePair.appendChild(time);
+    
+    div.appendChild(addressTimePair);
 }
