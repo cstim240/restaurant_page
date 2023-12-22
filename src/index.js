@@ -43,21 +43,9 @@ function loadHeader(){
     order_btn.innerText = "ORDER NOW";
     order_btn.classList.add('buttonText');
     order_btn.addEventListener('click', () => {
-        const footer = document.querySelector('.footer');
-        if (footer){
-            contentDiv.removeChild(footer);
-        }
-        const locationsSec = document.querySelector('.location_Sec');
-        const mainSec = document.querySelector('.main_sec_container');
-        if (mainSec){
-            contentDiv.removeChild(mainSec); 
-        } else if (locationsSec){
-            contentDiv.removeChild(locationsSec);
-        }
-        //removes mainSec to avoid multiple mainsections popping after initial click
+        removeAllSections(order_btn);
         loadMainSec();
         loadFooter();
-        clickedStatus(order_btn); //function to apply click class and remove click class from other buttons
     });
     
     header.appendChild(topRtitle);
