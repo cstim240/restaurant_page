@@ -38,11 +38,18 @@ function loadHeader(){
         removeAllSections(locations);
         loadLocations();
     });
-
     header_menu.appendChild(locations);
-    const giftcards = document.createElement('p');
+
+    const giftcards = document.createElement('button');
     giftcards.innerText = "Gift-Cards";
+    giftcards.classList.add('header_menu_button');
+    giftcards.classList.add('giftcard_button');
+    giftcards.addEventListener('click', ()=> {
+        removeAllSections(giftcards);
+        loadGiftCards();
+    });
     header_menu.appendChild(giftcards);
+
     const careers = document.createElement('p');
     careers.innerText = "Careers";
     header_menu.appendChild(careers);
