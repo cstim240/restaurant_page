@@ -59,9 +59,12 @@ function loadHeader(){
         if (footer){
             contentDiv.removeChild(footer);
         }
+        const locationsSec = document.querySelector('.location_Sec');
         const mainSec = document.querySelector('.main_sec_container');
         if (mainSec){
             contentDiv.removeChild(mainSec); 
+        } else if (locationsSec){
+            contentDiv.removeChild(locationsSec);
         }
         //removes mainSec to avoid multiple mainsections popping after initial click
         loadMainSec();
@@ -408,7 +411,7 @@ function loadLocations(){
     const contentDiv = document.querySelector('#content');
 
     const locationsDiv = document.createElement('div');
-    locationsDiv.classList.add('.location_Sec'); 
+    locationsDiv.classList.add('location_Sec'); 
 
     const locationsInnerDiv = document.createElement('div');
     const locationTitle = document.createElement('p');
