@@ -476,7 +476,27 @@ function clickedStatus(btn){
     btn.classList.add('clicked');
 }
 
-function removeAllSections(){
+function removeAllSections(section, btn){
+    const contentDiv = document.querySelector('#content');
+    const footer = document.querySelector('.footer');
+    contentDiv.removeChild(footer);
+    const mainSec = document.querySelector('.main_sec_container');
+    contentDiv.removeChild(mainSec);
+    const locationsSec = document.querySelector('.location_Sec');
+    contentDiv.removeChild();
+    const xx = document.querySelector('.');
+    contentDiv.removeChild();
+    const xy = document.querySelector('.');
+    contentDiv.removeChild();
+    const xz = document.querySelector('.');
+    contentDiv.removeChild();
 
+    if(mainSec){ 
+        loadMainSec() 
+    } else if(locationsSec) {
+        loadLocations()
+    } 
+    loadFooter();
+    clickedStatus(btn);
 }
 
