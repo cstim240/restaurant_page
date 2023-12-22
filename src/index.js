@@ -408,7 +408,14 @@ function loadLocations(){
     const contentDiv = document.querySelector('#content');
 
     const locationsDiv = document.createElement('div');
-    locationsDiv.classList.add('.location_Sec');
+    locationsDiv.classList.add('.location_Sec'); 
+
+    const locationsInnerDiv = document.createElement('div');
+    const locationTitle = document.createElement('p');
+    locationTitle.innerText = "Locations";
+    locationsInnerDiv.appendChild(locationTitle);
+
+    locationsDiv.appendChild(locationsInnerDiv);
     
     contentDiv.appendChild(locationsDiv);
 }
