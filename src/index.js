@@ -26,21 +26,9 @@ function loadHeader(){
     locations.innerText = "Locations";
     locations.classList.add('header_menu_button');
     locations.addEventListener('click', () => {
-        const footer = document.querySelector('.footer');
-        if (footer){
-            contentDiv.removeChild(footer);
-        }
-        const mainSec = document.querySelector('.main_sec_container');
-        const locationsSec = document.querySelector('.location_Sec');
-        if (mainSec){
-            contentDiv.removeChild(mainSec); 
-        } else if (locationsSec){
-            contentDiv.removeChild(locationsSec);
-        }
-        //removes mainSec to avoid multiple mainsections popping after initial click
+        removeAllSections(locations);
         loadLocations();
         loadFooter();
-        clickedStatus(locations);
     });
 
     header_menu.appendChild(locations);
@@ -476,27 +464,22 @@ function clickedStatus(btn){
     btn.classList.add('clicked');
 }
 
-function removeAllSections(section, btn){
+//removes all the existing sections and applied clickedStatus()
+function removeAllSections(btn){
     const contentDiv = document.querySelector('#content');
     const footer = document.querySelector('.footer');
-    contentDiv.removeChild(footer);
-    const mainSec = document.querySelector('.main_sec_container');
-    contentDiv.removeChild(mainSec);
-    const locationsSec = document.querySelector('.location_Sec');
-    contentDiv.removeChild();
-    const xx = document.querySelector('.');
-    contentDiv.removeChild();
-    const xy = document.querySelector('.');
-    contentDiv.removeChild();
-    const xz = document.querySelector('.');
-    contentDiv.removeChild();
 
+    const mainSec = document.querySelector('.main_sec_container');
+    const locationsSec = document.querySelector('.location_Sec');
+    if (footer){
+        contentDiv.removeChild(footer);
+    }
+ 
     if(mainSec){ 
-        loadMainSec() 
+        contentDiv.removeChild(mainSec); 
     } else if(locationsSec) {
-        loadLocations()
+        contentDiv.removeChild(locationsSec);
     } 
-    loadFooter();
     clickedStatus(btn);
 }
 
