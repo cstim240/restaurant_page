@@ -130,7 +130,7 @@ table {
 }
 
 .main_sec, .locationsInnerDiv {
-	height: 438.66px;
+	height: 400px;
 	width: 480px;
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
@@ -177,7 +177,7 @@ table {
 
 .location_title, .happyHour_title {
 	font-size: 28px;
-	font-weight: 700;
+	font-weight: 400;
 }
 
 .name_price, .addressTimePair {
