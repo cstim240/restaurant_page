@@ -40,6 +40,7 @@ function loadHeader(){
         //removes mainSec to avoid multiple mainsections popping after initial click
         loadLocations();
         loadFooter();
+        clickedStatus(locations);
     });
 
     header_menu.appendChild(locations);
@@ -53,7 +54,6 @@ function loadHeader(){
     const order_btn = document.createElement('button');
     order_btn.innerText = "ORDER NOW";
     order_btn.classList.add('buttonText');
-    order_btn.setAttribute("id", "orderButton");
     order_btn.addEventListener('click', () => {
         const footer = document.querySelector('.footer');
         if (footer){
@@ -69,6 +69,7 @@ function loadHeader(){
         //removes mainSec to avoid multiple mainsections popping after initial click
         loadMainSec();
         loadFooter();
+        clickedStatus(order_btn); //function to apply click class and remove click class from other buttons
     });
     
     header.appendChild(topRtitle);
@@ -463,3 +464,14 @@ function createLocationEntries(div, location, openingHours){
     
     div.appendChild(addressTimePair);
 }
+
+//function to apply click class and remove click class from other buttons
+function clickedStatus(btn){
+    const locations = document.querySelector('.header_menu_button');
+    locations.classList.remove('clicked');
+
+    const order_btn = document.querySelector('.buttonText');
+    order_btn.classList.remove('clicked');
+
+    btn.classList.add('clicked');
+}; 

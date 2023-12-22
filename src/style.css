@@ -97,15 +97,13 @@ table {
 	border: none;
 }
 
-#orderButton:hover, .header_menu_button:hover {
+.buttonText:hover, .header_menu_button:hover {
 	background-color: #717070;
 }
 
-#orderButton:active, .header_menu_button:active {
-	color: #920E0E;
+.buttonText:active, .header_menu_button:active {
+	color: #393838;
 }
-
-
 
 .buttonText {
 	font-size: 2em;
@@ -115,6 +113,11 @@ table {
 	border-width: 2px;
 	border-color: #FFECC7;
 	padding: 10px;
+}
+
+.clicked {
+	color: #FFDD9B;
+	background-color: #717070;
 }
 
 .main_sec_container, .location_Sec {
