@@ -106,7 +106,7 @@ table {
 	padding: 10px;
 }
 
-.main_sec_container {
+.main_sec_container, .location_Sec {
 	border: 1px solid #920E0E;
 	background: url(../images/food_background.jpg);
 	background-size: contain; 
@@ -118,7 +118,7 @@ table {
 	align-items: center;
 }
 
-.main_sec {
+.main_sec, .locationsInnerDiv {
 	height: 80%;
 	width: 480px;
 	border: 20px solid #FFECC7;
