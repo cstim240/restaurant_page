@@ -441,6 +441,10 @@ function loadLocations(){
     loadFooter();
 }
 
+function loadGiftCards(){
+
+}
+
 function createLocationEntries(div, location, openingHours){
     const addressTimePair = document.createElement('div');
     addressTimePair.classList.add('addressTimePair');
@@ -461,11 +465,16 @@ function createLocationEntries(div, location, openingHours){
 function clickedStatus(btn){
     const locations = document.querySelector('.location_button');
     const menu_button = document.querySelector('.menu_button');
+    const giftcards = document.querySelector('.giftcard_button');
     if (locations){
-        locations.classList.remove('clicked');
+        locations.classList.remove('clicked'); //removes the class .clicked
     }
     if (menu_button){
         menu_button.classList.remove('clicked');
+    }
+
+    if (giftcards){
+        giftcards.classList.remove('clicked');
     }
 
     const order_btn = document.querySelector('.buttonText');
