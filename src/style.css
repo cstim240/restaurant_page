@@ -119,7 +119,7 @@ table {
 }
 
 .main_sec, .locationsInnerDiv {
-	height: 80%;
+	height: 438.66px;
 	width: 480px;
 	border: 20px solid #FFECC7;
 	background-color: #FFDD9B;
@@ -136,8 +136,6 @@ table {
 	justify-content: center;
 	gap: 20px;
 }
-
-
 
 #appetizerDiv {
 	grid-row-start: 1;
@@ -181,6 +179,12 @@ table {
 	gap: 150px;
 	font-size: 18px;
 	font-weight: 500;
+}
+
+.locationEntries {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
 }
 
 

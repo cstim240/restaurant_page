@@ -423,10 +423,10 @@ function loadLocations(){
     const locationEntries = document.createElement('div');
     locationEntries.classList.add('locationEntries');
     //enter createLocationEntries here
-    createLocationEntries(locationEntries, "Surrey", "10am - 9pm");
-    createLocationEntries(locationEntries, "Burnaby", "9am - 5pm");
-    createLocationEntries(locationEntries, "Richmond", "8am - 8pm");
-    createLocationEntries(locationEntries, "Vancouver", "9am - 6pm");
+    createLocationEntries(locationEntries, "Surrey", "10:30am - 9:00pm");
+    createLocationEntries(locationEntries, "Burnaby", "9:00am - 5:30pm");
+    createLocationEntries(locationEntries, "Richmond", "8:30am - 8:30pm");
+    createLocationEntries(locationEntries, "Vancouver", "9:00am - 6:30pm");
 
     locationsInnerDiv.appendChild(locationEntries);
 
