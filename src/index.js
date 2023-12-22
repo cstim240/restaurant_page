@@ -429,8 +429,18 @@ function loadLocations(){
     createLocationEntries(locationEntries, "Vancouver", "9:00am - 6:30pm");
 
     locationsInnerDiv.appendChild(locationEntries);
-
     locationsDiv.appendChild(locationsInnerDiv);
+
+    const happyHourDiv = document.createElement('div');
+    const happyHourTitle = document.createElement('p');
+    happyHourTitle.innerText = "Happy Hour";
+    happyHourDiv.appendChild(happyHourTitle);
+
+    const happyHourEntries = document.createElement('div');
+    createLocationEntries(happyHourEntries, "Weekdays", "1pm - 5pm");
+    createLocationEntries(happyHourEntries, "Weekends", "5pm - close");
+    happyHourDiv.appendChild(happyHourEntries);
+    locationsInnerDiv.appendChild(happyHourDiv);
     
     contentDiv.appendChild(locationsDiv);
 }
