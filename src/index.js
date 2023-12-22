@@ -445,8 +445,13 @@ function loadGiftCards(){
     const contentDiv = document.querySelector('#content');
     const giftcardsDiv = document.createElement('div');
     giftcardsDiv.classList.add('giftCards_Sec');
-    contentDiv.appendChild(giftcardsDiv);
+    
+    const giftcardsInnerDiv = document.createElement('div');
+    giftcardsInnerDiv.classList.add('giftcardsInnerDiv');
 
+    giftcardsDiv.appendChild(giftcardsInnerDiv);
+    contentDiv.appendChild(giftcardsDiv);
+    //to do: Fill gift-card content and Career button
     loadFooter();
 }
 

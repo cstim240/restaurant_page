@@ -132,7 +132,7 @@ table {
 	align-items: center;
 }
 
-.main_sec, .locationsInnerDiv {
+.main_sec, .locationsInnerDiv, .giftcardsInnerDiv {
 	height: 400px;
 	width: 480px;
 	border: 20px solid #FFECC7;
