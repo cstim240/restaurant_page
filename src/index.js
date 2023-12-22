@@ -28,7 +28,6 @@ function loadHeader(){
     locations.addEventListener('click', () => {
         removeAllSections(locations);
         loadLocations();
-        loadFooter();
     });
 
     header_menu.appendChild(locations);
@@ -45,7 +44,6 @@ function loadHeader(){
     order_btn.addEventListener('click', () => {
         removeAllSections(order_btn);
         loadMainSec();
-        loadFooter();
     });
     
     header.appendChild(topRtitle);
@@ -263,6 +261,7 @@ function loadMainSec(){
 
     main_sec_container.appendChild(main_sec);
     contentDiv.appendChild(main_sec_container);
+    loadFooter();
 }
 
 function loadFooter(){
@@ -423,6 +422,7 @@ function loadLocations(){
     locationsInnerDiv.appendChild(happyHourDiv);
     
     contentDiv.appendChild(locationsDiv);
+    loadFooter();
 }
 
 function createLocationEntries(div, location, openingHours){
