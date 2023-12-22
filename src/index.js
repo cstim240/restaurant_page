@@ -417,6 +417,7 @@ function loadLocations(){
     locationsInnerDiv.classList.add('locationsInnerDiv');
     const locationTitle = document.createElement('p');
     locationTitle.innerText = "Locations";
+    locationTitle.classList.add('location_title');
     locationsInnerDiv.appendChild(locationTitle);
 
     const locationEntries = document.createElement('div');

@@ -129,6 +129,15 @@ table {
 	column-gap: 20px;
 }
 
+.locationsInnerDiv {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
 #appetizerDiv {
 	grid-row-start: 1;
 }
@@ -151,7 +160,7 @@ table {
 	gap: 10px;
 }
 
-.food_title {
+.food_title, .location_title {
 	font-size: 24px;
 	color: #920E0E;
 }
