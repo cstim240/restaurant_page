@@ -25,6 +25,23 @@ function loadHeader(){
     const locations = document.createElement('button');
     locations.innerText = "Locations";
     locations.classList.add('header_menu_button');
+    locations.addEventListener('click', () => {
+        const footer = document.querySelector('.footer');
+        if (footer){
+            contentDiv.removeChild(footer);
+        }
+        const mainSec = document.querySelector('.main_sec_container');
+        const locationsSec = document.querySelector('.location_Sec');
+        if (mainSec){
+            contentDiv.removeChild(mainSec); 
+        } else if (locationsSec){
+            contentDiv.removeChild(locationsSec);
+        }
+        //removes mainSec to avoid multiple mainsections popping after initial click
+        loadLocations();
+        loadFooter();
+    });
+
     header_menu.appendChild(locations);
     const giftcards = document.createElement('p');
     giftcards.innerText = "Gift-Cards";
@@ -387,3 +404,11 @@ function createFooterLogo(followUsDiv, src_url){
     followUsDiv.appendChild(parentDivName);
 }
 
+function loadLocations(){
+    const contentDiv = document.querySelector('#content');
+
+    const locationsDiv = document.createElement('div');
+    locationsDiv.classList.add('.location_Sec');
+    
+    contentDiv.appendChild(locationsDiv);
+}
