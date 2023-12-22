@@ -19,9 +19,12 @@ function loadHeader(){
 
     const header_menu = document.createElement('div');
     header_menu.classList.add('header_menu');    
-    const menus = document.createElement('p');
+
+    const menus = document.createElement('button');
     menus.innerText = "Menus";
+    menus.classList.add('header_menu_button');
     header_menu.appendChild(menus);
+
     const locations = document.createElement('button');
     locations.innerText = "Locations";
     locations.classList.add('header_menu_button');
