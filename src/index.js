@@ -459,6 +459,21 @@ function loadLocations(){
     loadFooter();
 }
 
+function createLocationEntries(div, location, openingHours){
+    const addressTimePair = document.createElement('div');
+    addressTimePair.classList.add('addressTimePair');
+    
+
+    const address = document.createElement('p');
+    address.innerText = location;
+    addressTimePair.appendChild(address);
+    const time = document.createElement('p');
+    time.innerText = openingHours;
+    addressTimePair.appendChild(time);
+    
+    div.appendChild(addressTimePair);
+}
+
 function loadGiftCards(){
     const contentDiv = document.querySelector('#content');
     const giftcardsDiv = document.createElement('div');
@@ -504,21 +519,6 @@ function loadCareers(){
     careersDiv.appendChild(careersInnerDiv);
     contentDiv.appendChild(careersDiv);
     loadFooter();
-}
-
-function createLocationEntries(div, location, openingHours){
-    const addressTimePair = document.createElement('div');
-    addressTimePair.classList.add('addressTimePair');
-    
-
-    const address = document.createElement('p');
-    address.innerText = location;
-    addressTimePair.appendChild(address);
-    const time = document.createElement('p');
-    time.innerText = openingHours;
-    addressTimePair.appendChild(time);
-    
-    div.appendChild(addressTimePair);
 }
 
 //function to apply click class and remove click class from other buttons
