@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack serve --mode development"
+    "start": "webpack serve --mode development",
+    "gh-host": "git subtree push --prefix dist origin gh-pages"
   },
   "keywords": [],
   "author": "",
