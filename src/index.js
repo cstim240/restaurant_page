@@ -485,7 +485,10 @@ function loadCareers(){
     careersDiv.classList.add('careers_Sec');
 
     const careersInnerDiv = document.createElement('div');
-    careers.classList.add('careersInnerDiv');
+    careersInnerDiv.classList.add('careersInnerDiv');
+
+    careersDiv.appendChild(careersInnerDiv);
+    contentDiv.appendChild(careersDiv);
 }
 
 function createLocationEntries(div, location, openingHours){
