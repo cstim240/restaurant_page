@@ -50,8 +50,14 @@ function loadHeader(){
     });
     header_menu.appendChild(giftcards);
 
-    const careers = document.createElement('p');
+    const careers = document.createElement('button');
     careers.innerText = "Careers";
+    careers.classList.add('header_menu_button');
+    careers.classList.add('careers_button');
+    careers.addEventListener('click', () =>{
+        removeAllSections(careers);
+        loadCareers();
+    });
     header_menu.appendChild(careers);
 
     const order_btn = document.createElement('button');
@@ -471,6 +477,15 @@ function loadGiftCards(){
     giftcardsDiv.appendChild(giftcardsInnerDiv);
     contentDiv.appendChild(giftcardsDiv);
     loadFooter();
+}
+
+function loadCareers(){
+    const contentDiv = document.querySelector('#content');
+    const careersDiv = document.createElement('div');
+    careersDiv.classList.add('careers_Sec');
+
+    const careersInnerDiv = document.createElement('div');
+    careers.classList.add('careersInnerDiv');
 }
 
 function createLocationEntries(div, location, openingHours){
