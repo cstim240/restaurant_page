@@ -122,7 +122,7 @@ table {
 
 .main_sec_container, .location_Sec, .giftCards_Sec, .careers_Sec {
 	border: 1px solid #920E0E;
-	background: url(../images/food_background.jpg);
+	background: url(./food_background.jpg);
 	background-size: contain; 
 	/*the contain val specifies that regardless of the size of the containing box, the 
 	background image shoul dbe scaled so that each size is large as possible

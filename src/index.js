@@ -370,8 +370,8 @@ function loadFooter(){
 
     const logoDiv = document.createElement('div');
     logoDiv.classList.add('logoDiv');
-    createFooterLogo('https://github.com/cstim240', logoDiv, '../images/github-mark.png');
-    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, '../images/igwhite.png');
+    createFooterLogo('https://github.com/cstim240', logoDiv, './github-mark.png');
+    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, './igwhite.png');
     followUs.appendChild(logoDiv);
     
     const disclaimer = document.createElement('p');
@@ -486,7 +486,7 @@ function loadGiftCards(){
     giftcards_title.innerText = 'Gift cards available!';
     giftcards_title.classList.add('giftcards_title');
     giftcardsInnerDiv.appendChild(giftcards_title);
-    createGiftCard(giftcardsInnerDiv, '../images/gift_card.jpeg');
+    createGiftCard(giftcardsInnerDiv, './gift_card.jpeg');
 
     //to do: Fill gift-card content and Career button
     giftcardsDiv.appendChild(giftcardsInnerDiv);
@@ -507,7 +507,7 @@ function loadCareers(){
     jobBoard.classList.add('careers_title');
     careersInnerDiv.appendChild(jobBoard);
 
-    createGiftCard(careersInnerDiv, '../images/hiring_manager.jpeg');
+    createGiftCard(careersInnerDiv, './hiring_manager.jpeg');
 
     const precaution = document.createElement('p');
     precaution.innerText = "We are currently not hiring!"
