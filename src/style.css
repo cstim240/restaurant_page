@@ -151,6 +151,14 @@ table {
 	gap: 20px;
 }
 
+.careersInnerDiv {
+	gap: 10px;
+}
+
+.precaution {
+	font-size: 12px;
+}
+
 .giftcard_photo {
 	height: 300px;
 	width: 300px;

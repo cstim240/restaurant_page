@@ -492,7 +492,14 @@ function loadCareers(){
     jobBoard.classList.add('careers_title');
     careersInnerDiv.appendChild(jobBoard);
 
-    
+    createGiftCard(careersInnerDiv, '../images/hiring_manager.jpeg');
+
+    const precaution = document.createElement('p');
+    precaution.innerText = "We are currently not hiring!"
+    precaution.classList.add('precaution');
+    careersInnerDiv.appendChild(precaution);
+
+
 
     careersDiv.appendChild(careersInnerDiv);
     contentDiv.appendChild(careersDiv);
