@@ -489,6 +489,7 @@ function loadCareers(){
 
     careersDiv.appendChild(careersInnerDiv);
     contentDiv.appendChild(careersDiv);
+    loadFooter();
 }
 
 function createLocationEntries(div, location, openingHours){
@@ -543,6 +544,7 @@ function removeAllSections(btn){
     const mainSec = document.querySelector('.main_sec_container');
     const locationsSec = document.querySelector('.location_Sec');
     const giftCards_Sec = document.querySelector('.giftCards_Sec');
+    const careers_Sec = document.querySelector('.careers_Sec');
     if (footer){
         contentDiv.removeChild(footer);
     }
@@ -553,6 +555,8 @@ function removeAllSections(btn){
         contentDiv.removeChild(locationsSec);
     } else if(giftCards_Sec){
         contentDiv.removeChild(giftCards_Sec);
+    } else if(careers_Sec){
+        contentDiv.removeChild(careers_Sec);
     }
     clickedStatus(btn);
 }
