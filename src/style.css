@@ -143,7 +143,7 @@ table {
 	column-gap: 20px;
 }
 
-.locationsInnerDiv, .happyHourDiv, .giftcardsInnerDiv {
+.locationsInnerDiv, .happyHourDiv, .giftcardsInnerDiv, .careersInnerDiv {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -178,12 +178,12 @@ table {
 	gap: 10px;
 }
 
-.food_title, .location_title, .happyHour_title, .giftcards_title {
+.food_title, .location_title, .happyHour_title, .giftcards_title, .careers_title {
 	font-size: 24px;
 	color: #920E0E;
 }
 
-.location_title, .happyHour_title, .giftcards_title {
+.location_title, .happyHour_title, .giftcards_title, .careers_title {
 	font-size: 28px;
 	font-weight: 400;
 }

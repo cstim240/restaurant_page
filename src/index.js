@@ -487,6 +487,13 @@ function loadCareers(){
     const careersInnerDiv = document.createElement('div');
     careersInnerDiv.classList.add('careersInnerDiv');
 
+    const jobBoard = document.createElement('p');
+    jobBoard.innerText = "Job Board:";
+    jobBoard.classList.add('careers_title');
+    careersInnerDiv.appendChild(jobBoard);
+
+    
+
     careersDiv.appendChild(careersInnerDiv);
     contentDiv.appendChild(careersDiv);
     loadFooter();
