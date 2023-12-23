@@ -364,8 +364,8 @@ function loadFooter(){
 
     const logoDiv = document.createElement('div');
     logoDiv.classList.add('logoDiv');
-    createFooterLogo(logoDiv, '../images/github-mark.png');
-    createFooterLogo(logoDiv, '../images/igwhite.png');
+    createFooterLogo('https://github.com/cstim240', logoDiv, '../images/github-mark.png');
+    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, '../images/igwhite.png');
     followUs.appendChild(logoDiv);
     
     const disclaimer = document.createElement('p');
@@ -388,8 +388,9 @@ function createFooterDivContent(div, ...footernames){
     }
 }
 
-function createFooterLogo(followUsDiv, src_url){
+function createFooterLogo(website_url, followUsDiv, src_url){
     const parentDivName = document.createElement('a');
+    parentDivName.setAttribute('href', website_url);
 
     const img_elem = document.createElement('img');
     img_elem.classList.add('footer_logos');
