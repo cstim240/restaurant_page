@@ -511,6 +511,7 @@ function clickedStatus(btn){
     const locations = document.querySelector('.location_button');
     const menu_button = document.querySelector('.menu_button');
     const giftcards = document.querySelector('.giftcard_button');
+    const careers = document.querySelector('.careers_button');
     if (locations){
         locations.classList.remove('clicked'); //removes the class .clicked
     }
@@ -520,6 +521,10 @@ function clickedStatus(btn){
 
     if (giftcards){
         giftcards.classList.remove('clicked');
+    }
+
+    if (careers){
+        careers.classList.remove('clicked');
     }
 
     const order_btn = document.querySelector('.buttonText');
