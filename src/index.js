@@ -399,6 +399,17 @@ function createFooterLogo(followUsDiv, src_url){
     followUsDiv.appendChild(parentDivName);
 }
 
+function createGiftCard(parentDiv, src_url){
+    const parentDivName = document.createElement('a');
+
+    const img_elem = document.createElement('img');
+    img_elem.classList.add('giftcard_photo');
+    img_elem.setAttribute('src', src_url);
+
+    parentDivName.appendChild(img_elem);
+    parentDiv.appendChild(parentDivName);
+}
+
 function loadLocations(){
     const contentDiv = document.querySelector('#content');
 
@@ -449,9 +460,15 @@ function loadGiftCards(){
     const giftcardsInnerDiv = document.createElement('div');
     giftcardsInnerDiv.classList.add('giftcardsInnerDiv');
 
+    const giftcards_title = document.createElement('p');
+    giftcards_title.innerText = 'Gift cards available!';
+    giftcards_title.classList.add('giftcards_title');
+    giftcardsInnerDiv.appendChild(giftcards_title);
+    createGiftCard(giftcardsInnerDiv, '../images/gift_card.jpeg');
+
+    //to do: Fill gift-card content and Career button
     giftcardsDiv.appendChild(giftcardsInnerDiv);
     contentDiv.appendChild(giftcardsDiv);
-    //to do: Fill gift-card content and Career button
     loadFooter();
 }
 
@@ -459,7 +476,6 @@ function createLocationEntries(div, location, openingHours){
     const addressTimePair = document.createElement('div');
     addressTimePair.classList.add('addressTimePair');
     
-    //create p's then attach to locationEntries div!
 
     const address = document.createElement('p');
     address.innerText = location;

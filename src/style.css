@@ -143,14 +143,19 @@ table {
 	column-gap: 20px;
 }
 
-.locationsInnerDiv, .happyHourDiv {
-	display:flex;
+.locationsInnerDiv, .happyHourDiv, .giftcardsInnerDiv {
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 20px;
 }
 
+.giftcard_photo {
+	height: 300px;
+	width: 300px;
+	border-radius: 5%;
+}
 #appetizerDiv {
 	grid-row-start: 1;
 }
@@ -173,12 +178,12 @@ table {
 	gap: 10px;
 }
 
-.food_title, .location_title, .happyHour_title {
+.food_title, .location_title, .happyHour_title, .giftcards_title {
 	font-size: 24px;
 	color: #920E0E;
 }
 
-.location_title, .happyHour_title {
+.location_title, .happyHour_title, .giftcards_title {
 	font-size: 28px;
 	font-weight: 400;
 }
