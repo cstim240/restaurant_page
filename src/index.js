@@ -369,7 +369,7 @@ function loadFooter(){
 
     const logoDiv = document.createElement('div');
     logoDiv.classList.add('logoDiv');
-    createFooterLogo('https://github.com/cstim240', logoDiv, '.github-mark.png');
+    createFooterLogo('https://github.com/cstim240', logoDiv, './github-mark.png');
     createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, './igwhite.png');
     followUs.appendChild(logoDiv);
     
