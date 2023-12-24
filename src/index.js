@@ -71,7 +71,6 @@ function loadHeader(){
     header.appendChild(topRtitle);
     header.appendChild(header_menu);
     header.appendChild(order_btn);
-    console.log('headers have been appended!');
 
     contentDiv.appendChild(header);
     //end of header content
