@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Part of The Odin Project - Restaurant Page Goal: To create a restaurant home page using webpack, npm commands, and DOM manipulation. Link: unavailable",
   "main": "./src/index.js",
-  "homepage": ".",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
