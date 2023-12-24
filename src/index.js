@@ -369,8 +369,8 @@ function loadFooter(){
 
     const logoDiv = document.createElement('div');
     logoDiv.classList.add('logoDiv');
-    createFooterLogo('https://github.com/cstim240', logoDiv, '../src/github-mark.png');
-    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, '../src/igwhite.png');
+    createFooterLogo('https://github.com/cstim240', logoDiv, './src/github-mark.png');
+    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, './src/igwhite.png');
     followUs.appendChild(logoDiv);
     
     const disclaimer = document.createElement('p');
