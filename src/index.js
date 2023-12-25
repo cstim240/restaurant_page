@@ -1,8 +1,8 @@
-import '../src/style.css';
-import githubLogo from "../src/github-mark.png";
-import igLogo from '../src/igwhite.png';
-import hiringManager from '../src/hiring_manager.jpeg';
-import giftCard from '../src/gift_card.jpeg';
+import './style.css';
+import githubLogo from "./github-mark.png";
+import igLogo from './igwhite.png';
+import hiringManager from './hiring_manager.jpeg';
+import giftCard from './gift_card.jpeg';
 
 (function() {
     'use strict';
