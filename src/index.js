@@ -1,4 +1,9 @@
 import '../src/style.css';
+import githubLogo from "./github-mark.png";
+import igLogo from './igwhite.png';
+import hiringManager from './hiring_manager.jpeg';
+import giftCard from './gift_card.jpeg';
+
 (function() {
     'use strict';
     loadHeader();
@@ -369,8 +374,8 @@ function loadFooter(){
 
     const logoDiv = document.createElement('div');
     logoDiv.classList.add('logoDiv');
-    createFooterLogo('https://github.com/cstim240', logoDiv, './github-mark.png');
-    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, './igwhite.png');
+    createFooterLogo('https://github.com/cstim240', logoDiv, githubLogo);
+    createFooterLogo('https://www.instagram.com/minecraft/?hl=en', logoDiv, igLogo);
     followUs.appendChild(logoDiv);
     
     const disclaimer = document.createElement('p');
@@ -393,24 +398,23 @@ function createFooterDivContent(div, ...footernames){
     }
 }
 
-function createFooterLogo(website_url, followUsDiv, src_url){
+function createFooterLogo(website_url, followUsDiv, img){
     const parentDivName = document.createElement('a');
     parentDivName.setAttribute('href', website_url);
-
-    const img_elem = document.createElement('img');
+    const img_elem = new Image();
+    img_elem.src = img;
     img_elem.classList.add('footer_logos');
-    img_elem.setAttribute('src', src_url);
 
     parentDivName.appendChild(img_elem);
     followUsDiv.appendChild(parentDivName);
 }
 
-function createGiftCard(parentDiv, src_url){
+function createGiftCard(parentDiv, img){
     const parentDivName = document.createElement('a');
 
-    const img_elem = document.createElement('img');
+    const img_elem = new Image();
+    img_elem.src = img;
     img_elem.classList.add('giftcard_photo');
-    img_elem.setAttribute('src', src_url);
 
     parentDivName.appendChild(img_elem);
     parentDiv.appendChild(parentDivName);
@@ -485,7 +489,7 @@ function loadGiftCards(){
     giftcards_title.innerText = 'Gift cards available!';
     giftcards_title.classList.add('giftcards_title');
     giftcardsInnerDiv.appendChild(giftcards_title);
-    createGiftCard(giftcardsInnerDiv, '../src/gift_card.jpeg');
+    createGiftCard(giftcardsInnerDiv, giftCard);
 
     //to do: Fill gift-card content and Career button
     giftcardsDiv.appendChild(giftcardsInnerDiv);
@@ -506,7 +510,7 @@ function loadCareers(){
     jobBoard.classList.add('careers_title');
     careersInnerDiv.appendChild(jobBoard);
 
-    createGiftCard(careersInnerDiv, '../src/hiring_manager.jpeg');
+    createGiftCard(careersInnerDiv, hiringManager);
 
     const precaution = document.createElement('p');
     precaution.innerText = "We are currently not hiring!"
