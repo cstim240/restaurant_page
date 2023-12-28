@@ -1,6 +1,9 @@
 Part of The Odin Project - Restaurant Page
+
 Goal: To create a restaurant home page using webpack, npm commands, and DOM manipulation.
+
 Currently not responsive, don't try to view on a mobile device!
+
 Link: (https://cstim240.github.io/restaurant_page/)
 
 Figma outline for this project:
